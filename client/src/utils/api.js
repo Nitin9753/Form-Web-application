@@ -1,7 +1,7 @@
 // src/services/api.js
 import axios from 'axios';
 
-const API_URL = 'http://localhost:4000/api/forms'; 
+const API_URL = 'https://form-web-application.onrender.com/api/forms'; 
 
 export const getForms = () => axios.get(API_URL);
 export const getForm = (id) => axios.get(`${API_URL}/${id}`);
